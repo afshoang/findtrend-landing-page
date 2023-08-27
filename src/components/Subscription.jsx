@@ -4,11 +4,11 @@ import { FaCheck } from 'react-icons/fa';
 const Subscription = () => {
   return (
     <div id='pricing' className='container mx-auto py-20 px-6 sm:py-36'>
-      <h1 className='text-3xl sm:text-6xl font-bold px-3 sm:leading-[80px] text-center mb-20'>
+      <h1 data-aos="fade-down" className='text-3xl sm:text-6xl font-bold px-3 sm:leading-[80px] text-center mb-20'>
         Get your best deal
       </h1>
 
-      <div className='flex justify-center items-center mb-32'>
+      <div data-aos="fade-down" data-aos-delay={150} className='flex justify-center items-center mb-32'>
         <div className='flex items-center gap-5 relative'>
           <h3>Monthly</h3>
           <div className='bg-white w-[104px] h-[44px] rounded-[99px] relative'>
@@ -25,7 +25,7 @@ const Subscription = () => {
 
       <div className='grid mx-auto grid-cols-1 md:grid-cols-3 max-md:max-w-[360px] auto-rows-auto gap-10'>
         {
-          plans.map((plan,idx) => <div key={plan.name} className={`${idx === 1 ? `bg-primary` :` bg-white`} max-w-[339px] md:max-w-[360px] p-8 rounded-2xl flex flex-col`}>
+          plans.map((plan,idx) => <div data-aos="fade-down" data-aos-delay={100 * idx} key={plan.name} className={`${idx === 1 ? `bg-primary` :` bg-white`} max-w-[339px] md:max-w-[360px] p-8 rounded-2xl flex flex-col`}>
             <div className='text-black border-b-[1px] border-gray200 pb-8 mb-8'>
               <h2 className='text-3xl font-medium'>{plan.name}</h2>
               <p>{plan.description}</p>
