@@ -18,11 +18,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-      },
-      content: {
-        'arrowBlack': 'url("./src/assets/arrow-black.svg")',
-        'arrowWhite': 'url("./src/assets/arrow-white.svg")',
-      },
+      }
     },
     screens: {
       xs: "480px",

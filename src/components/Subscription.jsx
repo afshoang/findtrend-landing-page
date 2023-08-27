@@ -1,4 +1,5 @@
 import { plans } from '../constants';
+import { arrowWhite } from '../assets';
 import { FaCheck } from 'react-icons/fa';
 
 const Subscription = () => {
@@ -15,10 +16,13 @@ const Subscription = () => {
             <div className='w-[32px] h-[32px] rounded-[50%] absolute bg-primary top-[6px] left-[8px] cursor-pointer'></div>
           </div>
           <h3 className='text-gray200'>Yearly</h3>
-          <div className='sm:block max-w-[100px] absolute -bottom-24 right-0 xs:-top-5 xs:right-[-120px]'>
-            <p className='text-xs rotate-3 relative after:content-arrowWhite after:absolute after:w-[30px] after:h-[35px] after:rotate-[190deg] max-xs:after:-top-10 xs:after:rotate-90 after:-left-4 xs:after:-bottom-10 xs:after:left-0'>
+          <div data-aos="fade-down" data-aos-delay="250" className='sm:block max-w-[100px] absolute -bottom-24 right-0 xs:-top-10 xs:right-[-120px]'>
+            <p className='text-xs -rotate-[9deg]'>
               Save 10% per month
             </p>
+             <img
+              src={arrowWhite} alt="arrow"
+              className='absolute -top-[40px] rotate-[180deg] sm:rotate-[90deg] sm:top-[37px] w-[30px] h-[35px]'/>
           </div>
         </div>
       </div>
