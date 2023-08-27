@@ -3,7 +3,7 @@ import { tab5 } from '../assets';
 const NewTab = () => (
     <div className='w-full sm:max-w-[850px] text-center flex flex-col justify-between items-center gap-14 py-20 sm:py-36'>
       <h1 data-aos="fade-down" className='text-3xl sm:text-6xl font-bold max-sm:mb-5'>Open new tabs is sh*t</h1>
-      <div data-aos="zoom-in" className='max-w-[339px] sm:max-w-[500px] bg-white py-6 sm:py-14 px-20 rounded-2xl relative flex items-center justify-center'>
+      <div className='max-w-[339px] sm:max-w-[500px] bg-white py-6 sm:py-14 px-20 rounded-2xl relative flex items-center justify-center'>
         <div className='sm:block max-w-[100px] absolute -bottom-[45%] -left-1 sm:top-2/4 sm:-left-28'>
           <p className='text-xs rotate-3 relative before:content-arrowBlack before:absolute before:w-[30px] before:h-[35px] before:-rotate-90 before:-top-10 before:left-10'>solution for discover a trend</p>
         </div>
